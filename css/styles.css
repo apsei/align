@@ -44,6 +44,9 @@ a:active, .btn:active {
 
 /* header */
 
+.header-container {
+  padding: 30px 0;
+}
 header {
   background: var(--green-primary, #153C3C);
 }
@@ -77,12 +80,11 @@ header {
 .header__nav {
   display: flex;
   align-items: center;
-  padding: 28.5px 0 29.5px;
 }
 .nav-list {
   display: flex;
   gap: 1px;
-  margin-left: 72px;
+  margin: 0 0 0 72px;
 }
 .nav-list__item {
   padding: 9px 25px;
@@ -93,4 +95,10 @@ header {
 }
 .header__nav .btn {
   margin-left: auto;
+}
+
+/* hero section */
+
+.section-hero {
+  margin-top: 100px;
 }
