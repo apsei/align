@@ -127,12 +127,11 @@ header {
   margin-top: 100px;
 }
 .section-hero__title {
-  max-width: 567px;
   position: relative;
+  max-width: 567px;
   margin-top: 11px;
   text-align: center;
   font-size: 62px;
-  color: var(--text-primary, #172426);
   font-weight: 400;
   line-height: 80px;
   letter-spacing: 2.88px;
@@ -146,4 +145,40 @@ header {
 }
 .hero-image {
   margin-top: 80px;
+}
+
+/* landing page examples section */
+
+.section__landings {
+  margin-top: 160px;
+}
+.section__landings .section__title {
+  font-size: 56px;
+  text-align: center;
+  line-height: 64px;
+  letter-spacing: 2.24px;
+}
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 96px;
+  padding: 0;
+  gap: 40px;
+}
+.examples-item {
+  padding: 40px 56px;
+  padding-bottom: 0;
+  background: var(--green-secondary, #F2F8F8);
+  border-radius: 12px;
+}
+.examples-item-heading {
+  font-size: 21px;
+  color: var(--text-primary, #172426);
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0.96px;
+}
+.examples-image {
+  max-width: 398px;
+  margin-top: 40px;
 }
