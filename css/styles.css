@@ -44,14 +44,25 @@ a:active, .btn:active {
   color: #fff;
 }
 .section__heading {
-  display: inline-block;
   padding: 8px 16px;
   background: #F3F7F2;
   font-size: 18px;
+  color: var(--green-primary, #153C3C);
   font-weight: 400;
   line-height: 32px;
   text-transform: uppercase;
   text-align: center;
+  border-radius: 4px;
+}
+.section__title {
+  margin-top: 13px;
+  max-width: 612px;
+  text-align: center;
+  font-size: 56px;
+  color: var(--text-primary, #172426);
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 2.24px;
 }
 
 /* header */
@@ -115,17 +126,18 @@ header {
 .section-hero {
   margin-top: 100px;
 }
-.section__title {
+.section-hero__title {
   max-width: 567px;
   position: relative;
   margin-top: 11px;
   text-align: center;
   font-size: 62px;
+  color: var(--text-primary, #172426);
   font-weight: 400;
   line-height: 80px;
   letter-spacing: 2.88px;
 }
-.hero-container > .section__title::after {
+.section-hero__title::after {
   position: absolute;
   left: 160px;
   bottom: -22px;
