@@ -28,6 +28,9 @@ a:active, .btn:active {
   filter: brightness(1);
 }
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 1060px;
   margin: 0 auto;
 }
@@ -40,11 +43,21 @@ a:active, .btn:active {
   line-height: 24px;
   color: #fff;
 }
-
+.section__heading {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #F3F7F2;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 /* header */
 
 .header-container {
+  display: block;
   padding: 30px 0;
 }
 header {
@@ -101,4 +114,24 @@ header {
 
 .section-hero {
   margin-top: 100px;
+}
+.section__title {
+  max-width: 567px;
+  position: relative;
+  margin-top: 11px;
+  text-align: center;
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: 2.88px;
+}
+.hero-container > .section__title::after {
+  position: absolute;
+  left: 160px;
+  bottom: -22px;
+  content: url(/img/underscore-ico.svg);
+  z-index: -1;
+}
+.hero-image {
+  margin-top: 80px;
 }
