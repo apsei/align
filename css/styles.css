@@ -204,14 +204,14 @@ header {
 
 /* additional pages section */
 
-.addtional-pages-list {
+.additional-pages-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 96px;
   padding: 0;
   gap: 40px;
 }
-.addtional-item {
+.additional-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -219,6 +219,11 @@ header {
   padding: 40px;
   background: var(--green-secondary, #F2F8F8);
   border-radius: 12px;
+  cursor: pointer;
+  transition: .25s;
+}
+.additional-item:hover {
+  filter: brightness(.85);
 }
 .addtional-item-heading {
   font-size: 22px;
