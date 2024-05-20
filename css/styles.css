@@ -71,6 +71,9 @@ a:active, .btn:active {
   width: 40px;
   height: 40px;
 }
+.price {
+  color: var(--text-tertiary, #ADC9A6);
+}
 
 /* header */
 
@@ -231,4 +234,62 @@ header {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.96px;
+}
+
+
+/* purchase section */
+
+.purchase-container {
+  flex-direction: row;
+  background: var(--green-primary, #153C3C);
+  background-image: url(/img/purchase-bg-vector.svg);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+.purchase-container::before {
+  z-index: 1;
+}
+.purchase-content {
+  max-width: 524px; /* 480px and padding -20px */
+  padding: 64px;
+  padding-right: 0;
+}
+.purchase-heading {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 1.6px;
+}
+.purchase-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-top: 33px;
+  padding: 0;
+  gap: 10px;
+}
+.purchase__item {
+  max-height: 48px;
+}
+.purchase-list .price {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
+}
+.purchase__description {
+  display: inline-block;
+  max-width: 124px;
+  font-size: 12px;
+  color: #DDE4E4;
+  line-height: 24px;
+  letter-spacing: 0.28px;
+}
+.purchase-list .btn {
+  margin-left: 14px;
+  padding: 16px 44px;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
 }
