@@ -70,12 +70,24 @@ a:active, .btn:active {
   justify-content: center;
   width: 40px;
   height: 40px;
+  transition: .25s;
 }
 .price {
   color: var(--text-tertiary, #ADC9A6);
 }
 .copyright {
   color: #fff;
+}
+
+/* animations */
+
+@keyframes move {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(5%);
+  }
 }
 
 /* header */
@@ -231,6 +243,9 @@ header {
 .additional-item:hover {
   filter: brightness(.85);
 }
+.additional-item:hover .arrow-ico {
+  transform: translateX(5px); 
+}
 .addtional-item-heading {
   font-size: 22px;
   color: var(--text-primary, #172426);
@@ -385,7 +400,6 @@ footer {
 }
 .footer .copyright {
   display: flex;
-  gap: 10px;
 }
 .copyright svg {
   position: relative;
